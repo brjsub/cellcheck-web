@@ -52,7 +52,10 @@ header{position:sticky;top:0;z-index:10;backdrop-filter:blur(12px);-webkit-backd
 .lang{display:flex;border:1px solid var(--line);border-radius:999px;overflow:hidden}
 .lang button{all:unset;cursor:pointer;padding:5px 11px;font:600 12px var(--mono);color:var(--muted)}
 .lang button[aria-pressed=true]{background:var(--cyan);color:#022028}
-@media (max-width:760px){.links a{display:none}}
+.links a.kofi{display:inline-flex;align-items:center;gap:6px;padding:6px 13px;border-radius:999px;border:1px solid rgba(34,211,238,.45);color:var(--text);background:rgba(34,211,238,.08);font-weight:600}
+.links a.kofi span[aria-hidden]{color:var(--cyan)}
+.links a.kofi:hover{background:rgba(34,211,238,.18);color:#fff}
+@media (max-width:760px){.links a:not(.kofi){display:none}.links{gap:12px}}
 
 /* hero */
 .hero{padding:72px 0 40px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
@@ -130,6 +133,15 @@ h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.8px;line-height:1.15;margin
 .warnbox p{margin:0 0 10px;color:#e8c9c6}
 .warnbox p:last-child{margin:0}
 
+
+/* colabora */
+.support{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;border:1px solid rgba(34,211,238,.3);border-radius:var(--r);padding:30px;
+  background:linear-gradient(120deg,rgba(34,211,238,.10),rgba(79,140,255,.05) 60%,rgba(14,25,32,.6))}
+.support .cup{width:56px;height:56px;border-radius:16px;display:grid;place-items:center;background:rgba(34,211,238,.12);border:1px solid rgba(34,211,238,.3);font-size:28px}
+.support h2{font-size:26px;margin:0 0 6px}
+.support p{margin:0;color:var(--muted)}
+@media (max-width:760px){.support{grid-template-columns:1fr}}
+
 /* faq */
 details{border-bottom:1px solid var(--line);padding:18px 0}
 summary{cursor:pointer;font-weight:600;font-size:16.5px;list-style:none;display:flex;justify-content:space-between;gap:16px}
@@ -179,6 +191,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
    <a href="#como"><span data-l="es">Cómo funciona</span><span data-l="en">How it works</span></a>
    <a href="#privacidad"><span data-l="es">Privacidad</span><span data-l="en">Privacy</span></a>
    <a href="#faq">FAQ</a>
+   <a class="kofi" href="https://ko-fi.com/brjsub" target="_blank" rel="noopener"><span aria-hidden="true">♥</span><span data-l="es">Colabora</span><span data-l="en">Support</span></a>
    <div class="lang" role="group" aria-label="Idioma / Language">
     <button type="button" data-set="es" aria-pressed="true">ES</button>
     <button type="button" data-set="en" aria-pressed="false">EN</button>
@@ -198,7 +211,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
   <div class="cta">
    <span class="btn primary">
     <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 3.5v17a1 1 0 0 0 1.5.86L19.5 13a1.15 1.15 0 0 0 0-2L5.5 2.64A1 1 0 0 0 4 3.5z"/></svg>
-    <span class="two"><small data-l="es">Próximamente</small><small data-l="en">Coming soon</small><span data-l="es">en Google Play</span><span data-l="en">on Google Play</span></span>
+    <span class="two"><small data-l="es">Próximamente</small><small data-l="en">Coming soon</small><span data-l="es">Gratis en Google Play</span><span data-l="en">Free on Google Play</span></span>
    </span>
    <a class="btn" href="#funciones"><span data-l="es">Ver qué muestra</span><span data-l="en">See what it shows</span> →</a>
   </div>
@@ -366,6 +379,23 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
  </div>
 </section>
 
+<section id="colabora" style="padding-top:20px">
+ <div class="wrap">
+  <div class="support reveal">
+   <div class="cup" aria-hidden="true">☕</div>
+   <div data-l="es">
+    <h2>Gratis y sin publicidad</h2>
+    <p>CellCheck es un proyecto personal, hecho en mi tiempo libre. Si te resulta útil y quieres ayudar a que siga mejorando, puedes invitarme a un café en Ko-fi.</p>
+   </div>
+   <div data-l="en">
+    <h2>Free and ad-free</h2>
+    <p>CellCheck is a personal project, built in my spare time. If you find it useful and want to help it keep improving, you can buy me a coffee on Ko-fi.</p>
+   </div>
+   <a class="btn primary" href="https://ko-fi.com/brjsub" target="_blank" rel="noopener">♥ <span data-l="es">Colabora en Ko-fi</span><span data-l="en">Support on Ko-fi</span></a>
+  </div>
+ </div>
+</section>
+
 <section id="faq" style="padding-top:20px">
  <div class="wrap">
   <div class="sec-label reveal">FAQ</div>
@@ -404,6 +434,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
    <div>
     <h4 data-l="es">Soporte</h4><h4 data-l="en">Support</h4>
     <a href="mailto:soporte@cellcheck.es">soporte@cellcheck.es</a>
+    <a href="https://ko-fi.com/brjsub" target="_blank" rel="noopener"><span data-l="es">Colabora en Ko-fi ♥</span><span data-l="en">Support on Ko-fi ♥</span></a>
    </div>
   </div>
   <p class="legal" data-l="es">CellCheck es un proyecto independiente, no afiliado a Shearwater Research ni aprobado o patrocinado por ella. Shearwater, Petrel, Perdix y Teric son marcas de Shearwater Research Inc. Android y Google Play son marcas de Google LLC.</p>
