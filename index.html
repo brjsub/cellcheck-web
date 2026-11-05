@@ -17,7 +17,7 @@
   --bg:#05090d; --bg2:#0a1218; --card:#0e1920; --line:#1b2b35;
   --text:#e6f1f6; --muted:#8aa3b1; --dim:#5d7584;
   --cyan:#22d3ee; --cyan2:#0ea5b7;
-  --c1:#4f8cff; --c2:#ff9b3d; --c3:#3ddc84; --warn:#ff5a52;
+  --c1:#4f8cff; --c2:#ff9b3d; --c3:#ffffff; --warn:#ff5a52;
   --r:18px;
   --font:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --mono:ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono",Consolas,monospace;
@@ -125,7 +125,7 @@ h2{font-size:clamp(28px,3.6vw,40px);letter-spacing:-.8px;line-height:1.15;margin
 .dev{flex:1 1 240px;border:1px solid var(--line);border-radius:14px;padding:18px 20px;background:var(--card)}
 .dev b{display:block;font-size:17px}
 .dev span{font:12.5px var(--mono);color:var(--dim)}
-.tag{display:inline-block;font:600 11px var(--mono);color:var(--c3);border:1px solid rgba(61,220,132,.35);padding:2px 8px;border-radius:6px;margin-top:10px}
+.tag{display:inline-block;font:600 11px var(--mono);color:var(--c3);border:1px solid rgba(255,255,255,.35);padding:2px 8px;border-radius:6px;margin-top:10px}
 
 /* aviso */
 .warnbox{border:1px solid rgba(255,90,82,.45);background:linear-gradient(180deg,rgba(255,90,82,.10),rgba(255,90,82,.03));border-radius:var(--r);padding:30px;display:grid;grid-template-columns:auto 1fr;gap:20px}
@@ -216,7 +216,7 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
    </span>
    <a class="btn" href="#funciones"><span data-l="es">Ver qué muestra</span><span data-l="en">See what it shows</span> →</a>
   </div>
-  <p class="note"><b>⚠</b><span data-l="es">Solo informativa. No es un equipo de seguridad ni sirve para decidir si un equipo o una célula es apto para bucear.</span><span data-l="en">For information only. Not safety equipment and not for deciding whether a unit or cell is fit to dive.</span></p>
+  <p class="note"><b>⚠</b><span data-l="es">Solo informativa. No es un equipo de seguridad ni sirve para decidir si un equipo o una célula es apto para bucear. Para mayores de 18 años. La pantalla de la imagen es ilustrativa.</span><span data-l="en">For information only. Not safety equipment and not for deciding whether a unit or cell is fit to dive. For adults (18+). The screen shown is illustrative.</span></p>
  </div>
 
  <div class="phone" aria-hidden="true">
@@ -239,23 +239,23 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
      </g>
      <g fill="#4f8cff" opacity=".8"><circle cx="70" cy="98" r="2"/><circle cx="96" cy="88" r="2"/><circle cx="124" cy="76" r="2"/><circle cx="150" cy="66" r="2"/><circle cx="182" cy="54" r="2"/><circle cx="214" cy="41" r="2"/><circle cx="236" cy="33" r="2"/></g>
      <g fill="#ff9b3d" opacity=".8"><circle cx="72" cy="94" r="2"/><circle cx="98" cy="83" r="2"/><circle cx="126" cy="70" r="2"/><circle cx="152" cy="58" r="2"/><circle cx="184" cy="45" r="2"/><circle cx="216" cy="31" r="2"/><circle cx="238" cy="22" r="2"/></g>
-     <g fill="#3ddc84" opacity=".85"><circle cx="70" cy="91" r="2"/><circle cx="97" cy="81" r="2"/><circle cx="125" cy="71" r="2"/><circle cx="151" cy="63" r="2"/><circle cx="183" cy="61" r="2"/><circle cx="215" cy="64" r="2"/><circle cx="237" cy="64" r="2"/></g>
+     <g fill="#ffffff" opacity=".85"><circle cx="70" cy="91" r="2"/><circle cx="97" cy="81" r="2"/><circle cx="125" cy="71" r="2"/><circle cx="151" cy="63" r="2"/><circle cx="183" cy="61" r="2"/><circle cx="215" cy="64" r="2"/><circle cx="237" cy="64" r="2"/></g>
      <line x1="50" y1="106" x2="246" y2="29" stroke="#4f8cff" stroke-width="1.6"/>
      <line x1="50" y1="103" x2="246" y2="18" stroke="#ff9b3d" stroke-width="1.6"/>
-     <line x1="50" y1="98" x2="246" y2="55" stroke="#3ddc84" stroke-width="1.6"/>
+     <line x1="50" y1="98" x2="246" y2="55" stroke="#ffffff" stroke-width="1.6"/>
     </svg>
    </div>
    <div class="s-sub" data-l="es">Linealidad</div><div class="s-sub" data-l="en">Linearity</div>
    <div class="s-card">
     <table class="s-tab">
      <tr><th></th><th data-l="es">Baja</th><th data-l="en">Low</th><th data-l="es">Alta</th><th data-l="en">High</th><th data-l="es">Índice</th><th data-l="en">Index</th></tr>
-     <tr><td><span class="dot" style="background:var(--c1)"></span>C1</td><td>47,9</td><td>48,3</td><td style="color:var(--c3)">1,01</td></tr>
-     <tr><td><span class="dot" style="background:var(--c2)"></span>C2</td><td>52,8</td><td>53,6</td><td style="color:var(--c3)">1,02</td></tr>
+     <tr><td><span class="dot" style="background:var(--c1)"></span>C1</td><td>47,9</td><td>48,3</td><td>1,01</td></tr>
+     <tr><td><span class="dot" style="background:var(--c2)"></span>C2</td><td>52,8</td><td>53,6</td><td>1,02</td></tr>
      <tr><td><span class="dot" style="background:var(--c3)"></span>C3</td><td>50,7</td><td>38,9</td><td style="color:var(--warn)">⚠ 0,77</td></tr>
     </table>
    </div>
    <div class="s-card" style="border-color:rgba(255,90,82,.4);font-size:11px;color:#ffc9c5">
-    ⚠ <span data-l="es">C3 limitada a ppO2 alta</span><span data-l="en">C3 limited at high ppO2</span>
+    ⚠ <span data-l="es">C3: índice bajo el umbral orientativo</span><span data-l="en">C3: index below rule-of-thumb threshold</span>
    </div>
    <div class="s-nav"><span data-l="es">Buceos</span><span data-l="en">Dives</span><span data-l="es">Evolución</span><span data-l="en">Trends</span><span data-l="es">Células</span><span data-l="en">Cells</span><span data-l="es">Ajustes</span><span data-l="en">Settings</span></div>
   </div>
@@ -335,8 +335,8 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
    <div class="sec-label reveal" data-l="es">Privacidad</div><div class="sec-label reveal" data-l="en">Privacy</div>
    <h2 class="reveal" data-l="es">Tus buceos se quedan en tu móvil.</h2>
    <h2 class="reveal" data-l="en">Your dives stay on your phone.</h2>
-   <p class="sec-lead reveal" style="margin-bottom:0" data-l="es">La app ni siquiera tiene permiso para usar Internet. Puedes exportar e importar tus buceos en un archivo zip para pasarlos a otro móvil. <a href="privacy.html">Política de privacidad</a>.</p>
-   <p class="sec-lead reveal" style="margin-bottom:0" data-l="en">The app doesn't even have Internet permission. You can export and import your dives as a zip file to move them to another phone. <a href="privacy.html">Privacy policy</a>.</p>
+   <p class="sec-lead reveal" style="margin-bottom:0" data-l="es">La app ni siquiera tiene permiso para usar Internet. Puedes exportar e importar tus buceos en un archivo zip para pasarlos a otro móvil. Esta web no usa cookies ni analítica. <a href="privacy.html">Política de privacidad</a>.</p>
+   <p class="sec-lead reveal" style="margin-bottom:0" data-l="en">The app doesn't even have Internet permission. You can export and import your dives as a zip file to move them to another phone. This website uses no cookies or analytics. <a href="privacy.html">Privacy policy</a>.</p>
   </div>
   <div class="chips reveal">
    <span class="chip"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg><span data-l="es">Sin cuentas</span><span data-l="en">No accounts</span></span>
@@ -386,11 +386,11 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
    <div class="cup" aria-hidden="true">☕</div>
    <div data-l="es">
     <h2>Gratis y sin publicidad</h2>
-    <p>CellCheck es un proyecto personal, hecho en mi tiempo libre. Si te resulta útil y quieres ayudar a que siga mejorando, puedes invitarme a un café en Ko-fi.</p>
+    <p>CellCheck es un proyecto personal, hecho en mi tiempo libre. Si te resulta útil y quieres ayudar a que siga mejorando, puedes invitarme a un café en Ko-fi. Es una aportación voluntaria: no es una compra ni da derecho a funciones, soporte o garantías. El pago se hace en Ko-fi, bajo sus condiciones.</p>
    </div>
    <div data-l="en">
     <h2>Free and ad-free</h2>
-    <p>CellCheck is a personal project, built in my spare time. If you find it useful and want to help it keep improving, you can buy me a coffee on Ko-fi.</p>
+    <p>CellCheck is a personal project, built in my spare time. If you find it useful and want to help it keep improving, you can buy me a coffee on Ko-fi. It is a voluntary contribution: it is not a purchase and gives no right to features, support or guarantees. Payment takes place on Ko-fi, under its terms.</p>
    </div>
    <a class="btn primary" href="https://ko-fi.com/brjsub" target="_blank" rel="noopener">♥ <span data-l="es">Colabora en Ko-fi</span><span data-l="en">Support on Ko-fi</span></a>
   </div>
@@ -449,11 +449,10 @@ footer{border-top:1px solid var(--line);padding:44px 0 56px;margin-top:40px;colo
   function set(l){
     root.lang=l;
     document.querySelectorAll(".lang button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.set===l)});
-    try{localStorage.setItem(KEY,l)}catch(e){}
   }
   var saved=null; try{saved=localStorage.getItem(KEY)}catch(e){}
   set(saved||((navigator.language||"es").toLowerCase().indexOf("es")===0?"es":"en"));
-  document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){set(b.dataset.set)})});
+  document.querySelectorAll(".lang button").forEach(function(b){b.addEventListener("click",function(){set(b.dataset.set);try{localStorage.setItem(KEY,b.dataset.set)}catch(e){}})});
   if("IntersectionObserver" in window){
     var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("on");io.unobserve(e.target)}})},{threshold:.12});
     document.querySelectorAll(".reveal").forEach(function(el){io.observe(el)});
